@@ -1,0 +1,23 @@
+<!--<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--<html>-->
+<head>
+    <title>Sukumar Satyen pageEncoding</title>
+</head>
+<body>
+    <h2>Submit Form</h2>
+    <form action="/submit" method="post">
+        <label for="website">Website URL:</label>
+        <input type="text" id="website" name="website"><br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

